@@ -6,7 +6,8 @@ const Footer = () => {
     <div className="px-24">
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 pt-12 min-h-[40vh]">
 
-        <h1 className="h-12 w-4/5">Tibu Health</h1>
+        
+        <img src="./images/logo.png" className="w-4/5" alt="logo" />
 
         <div className="col-span-3 grid grid-cols-2 lg:grid-cols-5">
           <div className="flex flex-col">

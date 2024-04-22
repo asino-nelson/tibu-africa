@@ -10,14 +10,16 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="bg-rose-500 relative h-[25vh] lg:h-full rounded-xl mx-8 mt-10">
-          <div className="h-full w-full relative rounded-2xl lg:rounded-2xl shadow-2xl">
-            image
-          </div>
+        <div className="relative h-[25vh] lg:h-full rounded-2xl mx-8 mt-10">
+          <img
+            src="./images/image.png"
+            className="w-full h-full relative rounded-2xl lg:rounded-3xl shadow-2xl "
+            alt="image"
+          />
         </div>
       </div>
       <div className="hidden absolute inset-x-0 bottom-0 lg:flex justify-center">
-        <div className="flex flex-col items-center justify-center animate-bounce">
+        <div className="flex flex-col items-center justify-center animate-bounce cursor-pointer">
           <p>Find a treatment</p>
           <FaArrowDown />
         </div>
