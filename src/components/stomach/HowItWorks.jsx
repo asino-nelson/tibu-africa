@@ -25,21 +25,22 @@ const CardData = [
 
 const HowItWorks = () => {
   return (
-    <div className="bg-teal-950 text-white py-6 lg:py-10">
+    <div className="bg-teal-950 text-white px-14 py-6 lg:py-10">
       <div className="w-full lg:w-1/2 mx-auto">
         <p className="font-semibold text-4xl text-center mb-6 lg:mb-0">
           How it works
         </p>
       </div>
-      <Joints />
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 font-medium relative lg:px-28 px-7">
+
+      <div className="grid grid-cols-1 lg:grid-cols-5 relative gap-6 font-medium px-7">
+        <Joints />
         {CardData.map((data) => (
           <div
             key={data.image}
-            className="flex flex-col items-center justify-center text-center w-3/4 mx-auto"
+            className="flex flex-col items-center relative justify-center text-center w-3/4 mx-auto"
           >
-            <div className="h-[200px] w-full flex items-center justify-center relative mb-4">
-              <img src={data.image} alt=""/>
+            <div className="h-[200px] w-full flex items-center justify-center">
+              <img src={data.image} alt="" />
             </div>
             <p className="pb-4 text-center">{data.description}</p>
           </div>
