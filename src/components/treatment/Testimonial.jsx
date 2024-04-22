@@ -54,7 +54,7 @@ const Testimonial = () => {
               <p>{d.message}</p>
             </div>
             <div className="flex justify-end items-end">
-              <p>{d.name}</p>
+              <p className="text-rose-400">{d.name}</p>
             </div>
           </div>
         ))}

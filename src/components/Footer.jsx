@@ -72,6 +72,8 @@ const Footer = () => {
                 <FaLinkedin />
                 <FaInstagram/>
               </div>
+              <img src="./images/image3.png" className="w-32" alt="playstore"/>
+              <img src="./images/image4.png" className="w-32" alt="applestore"/>
             </div>
               
             

@@ -1,3 +1,4 @@
+import ArrowDown from "./ArrowDown";
 
 
 const Hero = () => {
@@ -19,6 +20,7 @@ const Hero = () => {
         </div>
       </div>
       
+      <ArrowDown />
     </div>
   );
 };
