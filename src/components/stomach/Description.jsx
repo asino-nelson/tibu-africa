@@ -7,7 +7,7 @@ import Booking from "./Booking";
 
 const Description = () => {
   return (
-    <div className="py-10 flex flex-col gap-y-12 px-32">
+    <div className="py-10 flex flex-col gap-y-12 px-7 lg:px-32">
       <div className="flex flex-col lg:flex-row justify-between">
         <div className="flex flex-row gap-x-8 items-center">
           <div className="hidden lg:flex bg-gray-300 p-10 rounded-full items-center shrink-0">

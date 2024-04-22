@@ -20,7 +20,7 @@ const Question = [
 
 const Questions = () => {
   return (
-    <div className="py-10 lg:py-14 px-28">
+    <div className="py-10 lg:py-14 lg:px-28 px-7">
       <div className="w-full lg:w-1/2 mx-auto">
         <p className="font-semibold text-2xl lg:text-4xl text-center">
           Your Curious Questions

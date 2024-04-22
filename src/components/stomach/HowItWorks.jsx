@@ -32,16 +32,16 @@ const HowItWorks = () => {
         </p>
       </div>
       <Joints />
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 font-medium relative px-28">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 font-medium relative lg:px-28 px-7">
         {CardData.map((data) => (
           <div
             key={data.image}
-            className="flex flex-col text-center w-3/4 mx-auto"
+            className="flex flex-col items-center justify-center text-center w-3/4 mx-auto"
           >
-            <div className="h-[200px] w-full relative">
+            <div className="h-[200px] w-full flex items-center justify-center relative mb-4">
               <img src={data.image} alt=""/>
             </div>
-            <p className="pb-4">{data.description}</p>
+            <p className="pb-4 text-center">{data.description}</p>
           </div>
         ))}
       </div>

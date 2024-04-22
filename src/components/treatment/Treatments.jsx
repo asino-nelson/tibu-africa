@@ -2,7 +2,7 @@ import HealthCard from "../HealthCard";
 
 const Treatments = () => {
   return (
-    <div className="py-7 lg:py-14">
+    <div className="lg:px-28 px-7 py-7 lg:py-14">
       <div className="w-full lg:w-2/3 mx-auto">
         <p className="font-semibold text-2xl lg:text-4xl text-center">
           Find A Treatment
