@@ -1,6 +1,6 @@
 const Stakeholder = () => {
   return (
-    <div className="bg-blue-600 lg:grid fixed flex flex-col grid-cols-3 items-center text-white lg:p-5 p-2 w-full">
+    <div className="bg-blue-600 lg:grid fixed flex flex-col grid-cols-3 items-center text-white lg:p-5 p-2 w-full z-50">
       <h2 className="hidden lg:block col-span-1 font-bold w-fit">LIMITED TIME</h2>
       <div className="flex flex-col lg:col-span-2 lg:flex-row items-center justify-between w-full">
         <p className="font-semibold">

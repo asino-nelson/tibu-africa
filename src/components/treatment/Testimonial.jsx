@@ -18,20 +18,36 @@ const data = [
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias minima quam exercitationem deserunt non quas neque vel temporibus doloremque ducimus quisquam officiis, pariatur accusantium nulla! Veniam culpa vero tenetur inventore.",
   },
+  {
+    name: "Names",
+    message:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias minima quam exercitationem deserunt non quas neque vel temporibus doloremque ducimus quisquam officiis, pariatur accusantium nulla! Veniam culpa vero tenetur inventore.",
+  },
+  {
+    name: "Names",
+    message:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias minima quam exercitationem deserunt non quas neque vel temporibus doloremque ducimus quisquam officiis, pariatur accusantium nulla! Veniam culpa vero tenetur inventore.",
+  },
+  {
+    name: "Names",
+    message:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias minima quam exercitationem deserunt non quas neque vel temporibus doloremque ducimus quisquam officiis, pariatur accusantium nulla! Veniam culpa vero tenetur inventore.",
+  },
 ];
 
 const Testimonial = () => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToShow: 5,
+    slidesToScroll: 3,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 3000,
+
   };
 
   return (
-    <div className="w-3/4 m-auto py-10 lg:py-14 overflow-x-hidden lg:overflow-x-visible">
+    <div className="w-full m-auto py-10 lg:py-14 overflow-x-hidden lg:overflow-x-visible">
       <div className="w-full lg:w-1/2 mx-auto">
         <p className="font-semibold text-center text-2xl lg:text-4xl">
           Words From Our Health Rockstars!
@@ -41,20 +57,23 @@ const Testimonial = () => {
         </p>
       </div>
 
+      
       <Slider
         {...settings}
-        className="flex flex-row items-center justify-center"
+        className="flex flex-row w-full"
       >
         {data.map((d) => (
           <div
             key={d.name}
-            className="mt-20 flex flex-col border-2 rounded-2xl p-6 mx-6 text-sm"
+            className=" relative inline-block w-[317px]"
           >
-            <div className="pb-4">
-              <p>{d.message}</p>
-            </div>
-            <div className="flex justify-end items-end">
-              <p className="text-rose-400">{d.name}</p>
+            <div className="min-h-[30vh] flex flex-col items-end justify-between border shadow-lg rounded-2xl p-6 m-6 text-sm">
+              <div className="pb-4">
+                <p>{d.message}</p>
+              </div>
+              <div className="flex justify-end items-end">
+                <p className="text-rose-400">{d.name}</p>
+              </div>
             </div>
           </div>
         ))}

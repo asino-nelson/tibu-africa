@@ -3,7 +3,7 @@ import { FaSquareXTwitter } from "react-icons/fa6"
 
 const Footer = () => {
   return (
-    <div className="lg:px-24 px-7">
+    <div className="lg:px-24 shadow-2xl px-7">
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 pt-12 min-h-[40vh]">
 
         
