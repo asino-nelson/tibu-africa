@@ -4,3 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* .slick-list{
+    overflow-x: visible;
+} */
+
+.slick-list {
+    padding: 0 20% 0 0 !important;
+}

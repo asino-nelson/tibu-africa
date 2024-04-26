@@ -39,11 +39,20 @@ const Testimonial = () => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 5,
+    slidesToShow: 3.5,
     slidesToScroll: 3,
     autoplay: true,
     autoplaySpeed: 3000,
-
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },git 
+    ],
   };
 
   return (
@@ -57,16 +66,9 @@ const Testimonial = () => {
         </p>
       </div>
 
-      
-      <Slider
-        {...settings}
-        className="flex flex-row w-full"
-      >
+      <Slider {...settings} className="flex flex-row w-full">
         {data.map((d) => (
-          <div
-            key={d.name}
-            className=" relative inline-block w-[317px]"
-          >
+          <div key={d.name} className=" relative inline-block w-[317px]">
             <div className="min-h-[30vh] flex flex-col items-end justify-between border shadow-lg rounded-2xl p-6 m-6 text-sm">
               <div className="pb-4">
                 <p>{d.message}</p>
