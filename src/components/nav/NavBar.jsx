@@ -17,10 +17,10 @@ const NavBar = () => {
     <>
       <TopNav />
       <nav
-        className="fixed top-[74px] w-full flex items-center justify-between md:py-8 py-3 md:px-28 
+        className="fixed top-[74px] lg:mt-0 mt-[44px] w-full flex items-center justify-between md:py-8 py-3 md:px-28 
         px-7 text-black z-50 bg-white shadow-sm"
       >
-        <Link to="/" className="w-40 h-6">
+        <Link to="/" className="w-40 h-6 hidden lg:block">
           <img src="./images/logo.png" className="w-full h-full" alt="" />
         </Link>
 
@@ -129,21 +129,31 @@ const NavBar = () => {
         ) : (
           <motion.button
             alt="menu"
-            className="rounded-full text-white p-3 hover:text-white/70 transition duration-100"
+            className="text-black p-3 hover:text-black/70 transition duration-100 w-full flex items-center justify-between"
             whileTap={{ scale: 0.9 }}
             onClick={() => setIsMenuToggled(!isMenuToggled)}
           >
-            {!isAboveSmallScreen && isMenuToggled ? (
-              <FaTimes size={24} />
-            ) : (
-              <FaBars size={24} />
-            )}
+             {!isAboveSmallScreen && isMenuToggled ? (
+                  <FaTimes size={24} />
+                ) : (
+                  <FaBars size={24} />
+                )}
+                <Link to="/" className="w-30 h-6">
+                  <img
+                    src="./images/logo.png"
+                    className="w-full h-full"
+                    alt=""
+                  />
+                </Link>
+                <Link to="#" className="text-orange-500">
+                  <MdAddShoppingCart size={30} />
+                </Link>
           </motion.button>
         )}
 
         {/* MOILE MENU POUP */}
         {!isAboveSmallScreen && isMenuToggled && (
-          <div className="fixed left-0 top-0 h-[80%] bg-white w-full py-20">
+          <div className="fixed left-0 top-0 h-[85%] bg-white shadow-md w-full pt-16">
             <div className="flex justify-start px-7 py-2">
               {/**Close btn */}
               <motion.button
@@ -170,7 +180,7 @@ const NavBar = () => {
               </motion.button>
             </div>
             <motion.div
-              className="flex flex-col items-centre justify-start gap-7 text-xl px-7 divide-y divide-black"
+              className="flex flex-col items-centre justify-start gap-7 text-xl px-7 divide-y divide-gray-200"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -182,7 +192,15 @@ const NavBar = () => {
             >
               <Link to="#">
                 {" "}
-                Services
+                Treatments
+              </Link>
+              <Link to="#">
+                {" "}
+                Collect a sample
+              </Link>
+              <Link to="#">
+                {" "}
+                Vaccation
               </Link>
               <Link to="#">
                 {" "}
@@ -194,23 +212,27 @@ const NavBar = () => {
               </Link>
               <Link to="#">
                 {" "}
-                Contact us
+                Membership
               </Link>
               <Link to="#">
                 {" "}
-                Services
+                About Us
               </Link>
               <Link to="#">
                 {" "}
-                For Business
+                Careers
               </Link>
               <Link to="#">
                 {" "}
-                Our Clinics
+                Contact Us
               </Link>
               <Link to="#">
                 {" "}
-                Contact us
+                Sign In
+              </Link>
+              <Link to="#">
+                {" "}
+                Create Account
               </Link>
             </motion.div>
           </div>
