@@ -148,7 +148,7 @@ const NavBar = () => {
               {/**Close btn */}
               <motion.button
                 alt="menu"
-                className="text-black p-3 hover:text-black/70 transition duration-100"
+                className="text-black p-3 hover:text-black/70 transition duration-100 w-full flex items-center justify-between"
                 whileTap={{ scale: 0.9 }}
                 onClick={() => setIsMenuToggled(!isMenuToggled)}
               >
@@ -157,10 +157,20 @@ const NavBar = () => {
                 ) : (
                   <FaBars size={24} />
                 )}
+                <Link to="/" className="w-30 h-6">
+                  <img
+                    src="./images/logo.png"
+                    className="w-full h-full"
+                    alt=""
+                  />
+                </Link>
+                <Link to="#" className="text-orange-500">
+                  <MdAddShoppingCart size={30} />
+                </Link>
               </motion.button>
             </div>
             <motion.div
-              className="flex flex-col items-centre justify-start gap-10 text-xl px-7"
+              className="flex flex-col items-centre justify-start gap-7 text-xl px-7 divide-y divide-black"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -170,35 +180,35 @@ const NavBar = () => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <Link to="#" className="hover:text-orange-500">
+              <Link to="#">
                 {" "}
                 Services
               </Link>
-              <Link to="#" className="hover:text-orange-500">
+              <Link to="#">
                 {" "}
                 For Business
               </Link>
-              <Link to="#" className="hover:text-orange-500">
+              <Link to="#">
                 {" "}
                 Our Clinics
               </Link>
-              <Link to="#" className="hover:text-orange-500">
+              <Link to="#">
                 {" "}
                 Contact us
               </Link>
-              <Link to="#" className="hover:text-orange-500">
+              <Link to="#">
                 {" "}
                 Services
               </Link>
-              <Link to="#" className="hover:text-orange-500">
+              <Link to="#">
                 {" "}
                 For Business
               </Link>
-              <Link to="#" className="hover:text-orange-500">
+              <Link to="#">
                 {" "}
                 Our Clinics
               </Link>
-              <Link to="#" className="hover:text-orange-500">
+              <Link to="#">
                 {" "}
                 Contact us
               </Link>
