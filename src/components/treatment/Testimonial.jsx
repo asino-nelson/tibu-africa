@@ -51,7 +51,7 @@ const Testimonial = () => {
           slidesToScroll: 1,
           infinite: true,
         },
-      },git 
+      },
     ],
   };
 

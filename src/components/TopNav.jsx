@@ -1,7 +1,9 @@
-const Stakeholder = () => {
+const TopNav = () => {
   return (
-    <div className="bg-blue-600 lg:grid fixed flex flex-col grid-cols-3 items-center text-white lg:p-5 p-2 w-full z-50">
-      <h2 className="hidden lg:block col-span-1 font-bold w-fit">LIMITED TIME</h2>
+    <div className="fixed text-xl bg-blue-600 lg:grid outline-blue-600 flex flex-col grid-cols-3 items-center text-white lg:p-5 p-2 w-full z-50">
+      <h2 className="hidden lg:block col-span-1 font-bold w-fit">
+        LIMITED TIME
+      </h2>
       <div className="flex flex-col lg:col-span-2 lg:flex-row items-center justify-between w-full">
         <p className="font-semibold">
           Become a Stakeholder in TIBU Health.Minimum investment $250.
@@ -18,4 +20,4 @@ const Stakeholder = () => {
   );
 };
 
-export default Stakeholder;
+export default TopNav;
